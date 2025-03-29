@@ -1,0 +1,33 @@
+/* Additional styling beyond Tailwind */
+#gameCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#mainMenu {
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+/* Car styling (will be replaced with sprites later) */
+.car {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #mainMenu h1 {
+        font-size: 3rem;
+    }
+    
+    #mainMenu button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
