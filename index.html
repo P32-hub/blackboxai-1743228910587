@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Racing Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        #gameCanvas {
+            display: block;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <div id="gameContainer" class="relative w-full h-screen">
+        <canvas id="gameCanvas"></canvas>
+        
+        <!-- Main Menu -->
+        <div id="mainMenu" class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70">
+            <h1 class="text-5xl font-bold mb-8">CAR RACER</h1>
+            <button id="startBtn" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-xl font-semibold mb-4">
+                START RACE
+            </button>
+            <button id="settingsBtn" class="px-8 py-3 bg-gray-600 hover:bg-gray-700 rounded-lg text-xl font-semibold">
+                <i class="fas fa-cog mr-2"></i>SETTINGS
+            </button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
